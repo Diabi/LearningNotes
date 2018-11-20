@@ -27,3 +27,14 @@ SmsManager.sendTextMessage(String destinationAddress, String scAddress, String t
 ```PendingIntent deliveryIntent```：是当消息已经传递给收信人后所进行的Intent广播；
 
 如果你的BroadcastReveiver注册接收相应的消息，你就会收到相应的Intent，这时候就可以根据Intent的Action，执行相应的动作，这就是上面说的in the future的含义；
+
+### 获取PendingIntent实例
+
+有三个静态方法可以获得PendingIntent实例：
+```java
+public static PendingIntent getBroadcast(Context context, int requestCode, Intent intent, int flags)  
+public static PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags)  
+public static PendingIntent getService(Context context, int requestCode, Intent intent, int flags) 
+```
+
+### 后续补充...
