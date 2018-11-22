@@ -10,4 +10,4 @@
 
 2. 查看log
 
-![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/2.png)
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/2.jpg)
