@@ -2,6 +2,6 @@
 
 ## 修改最后一次commit
 
-```
-git commit --amend
-```
+**场景再现**
+
+
