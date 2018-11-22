@@ -33,3 +33,21 @@ HEAD 所指向的分支来使其指向该提交。 当你将它 reset 回 HEAD~�
 现在让我们回想一下刚才发生的事情。 你撤销了最后的提交、git add 和 git commit 命令以及工作目录中的所有工作。
 
 **必须注意，--hard 标记是 reset 命令唯一的危险用法，它也是 Git 会真正地销毁数据的仅有的几个操作之一。 其他任何形式的 reset 调用都可以轻松撤消，但是 --hard 选项不能，因为它强制覆盖了工作目录中的文件。 在这种特殊情况下，我们的 Git 数据库中的一个提交内还留有该文件的 v3 版本，我们可以通过 reflog 来找回它。但是若该文件还未提交，Git 仍会覆盖它从而导致无法恢复。**
+
+### 对比--soft --mixed --hard
+
+初始状态
+
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/5.jpg)
+
+* 执行```git reset --soft HEAD~```
+
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/6.jpg)
+
+* 执行```git reset --mixed HEAD~```
+
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/7.jpg)
+
+* 执行```git reset --hard HEAD~```
+
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/8.jpg)
