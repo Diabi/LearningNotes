@@ -4,10 +4,10 @@
 
 **场景再现**
 
-创建并提交a.txt 和 b.txt
+1. 创建并提交a.txt 和 b.txt
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/1.jpg)
 
-查看log
+2. 查看log
 
-![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/2.jpg)
+![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/2.png)
