@@ -58,4 +58,4 @@ HEAD 所指向的分支来使其指向该提交。 当你将它 reset 回 HEAD~�
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/8.jpg)
 
-撤销commit，撤销add，删除b文件
+撤销commit，撤销add，强制覆盖工作目录，此处表现为直接删除b文件
