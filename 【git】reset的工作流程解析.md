@@ -40,14 +40,22 @@ HEAD 所指向的分支来使其指向该提交。 当你将它 reset 回 HEAD~�
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/5.jpg)
 
+两个提交
+
 * 执行```git reset --soft HEAD~```
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/6.jpg)
+
+撤销commit，不撤销add
 
 * 执行```git reset --mixed HEAD~```
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/7.jpg)
 
+撤销commit，撤销add
+
 * 执行```git reset --hard HEAD~```
 
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/8.jpg)
+
+撤销commit，撤销add，删除b文件
