@@ -13,7 +13,7 @@
 ![](https://github.com/Diabi/LearningNotes/blob/master/screenshot/2.jpg)
 
 
-现在需要更改最后一次提交，把b.txt从提交中去掉，具体实现如下：
+**现在需要更改最后一次提交，把b.txt从提交中去掉，具体实现如下：**
 
 3. reflog -> reset -> rm
 
