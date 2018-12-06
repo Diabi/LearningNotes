@@ -9,7 +9,7 @@
 ### 第一步 -> 移动HEAD
 
 reset 做的第一件事是移动 HEAD 的指向。 这与改变 HEAD 自身不同（checkout 所做的）；reset 移动 HEAD 指向的分支。 这意味着如果 HEAD 设置为 master 
-分支（例如，你正在 master 分支上），运行```git reset 9e5e64a```将会使master指向9e5e64a。
+分支（例如，你正在 master 分支上），运行```git reset 9e5e6a4```将会使master指向9e5e6a4。
 
 ![](https://git-scm.com/book/en/v2/images/reset-soft.png)
 
