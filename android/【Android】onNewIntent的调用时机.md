@@ -12,5 +12,5 @@ onCreate 和 onNewIntent 方法中调用同一个处理数据的方法。
 
 **特别注意：**
 
-当调用到onNewIntent(intent)的时候，需要在onNewIntent() 中使用setIntent(intent)赋值给Activity的Intent.否则，后续的getIntent()都是得到老的Intent。
+当调用到onNewIntent(intent)的时候，需要在onNewIntent() 中使用setIntent(intent)赋值给Activity的Intent。否则，后续的getIntent()都是得到老的Intent。
 
