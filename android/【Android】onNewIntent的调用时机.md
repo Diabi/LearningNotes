@@ -10,3 +10,7 @@ onCreate 和 onNewIntent 方法中调用同一个处理数据的方法。
 
 ![](http://dl2.iteye.com/upload/attachment/0126/5549/2af0de16-8a4d-3e78-b705-32d50f049fb0.png)
 
+**特别注意：**
+
+当调用到onNewIntent(intent)的时候，需要在onNewIntent() 中使用setIntent(intent)赋值给Activity的Intent.否则，后续的getIntent()都是得到老的Intent。
+
