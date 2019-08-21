@@ -65,3 +65,28 @@ fun main() = runBlocking { // this: CoroutineScope
 }
 ```
 使用 runBlocking 协程构建器将 main 函数转换为协程。 包括 runBlocking 在内的每个协程构建器都将 CoroutineScope 的实例添加到其代码块所在的作用域中。 我们可以在这个作用域中启动协程而无需显式 join 之，因为外部协程（示例中的 runBlocking）直到在其作用域中启动的所有协程都执行完毕后才会结束。
+
+### 5. 作用域构建器
+```java
+import kotlinx.coroutines.*
+
+fun main() = runBlocking { // this: CoroutineScope
+    launch { 
+        delay(200L)
+        println("Task from runBlocking")
+    }
+
+    coroutineScope { // 创建一个协程作用域
+        launch {
+            delay(500L) 
+            println("Task from nested launch")
+        }
+
+        delay(100L)
+        println("Task from coroutine scope") // 这一行会在内嵌 launch 之前输出
+    }
+
+    println("Coroutine scope is over") // 这一行在内嵌 launch 执行完毕后才输出
+}
+```
+除了由不同的构建器提供协程作用域之外，还可以使用 coroutineScope 构建器声明自己的作用域。它会创建一个协程作用域并且在所有已启动子协程执行完毕之前不会结束。runBlocking 与 coroutineScope 的主要区别在于后者在等待所有子协程执行完毕时不会阻塞当前线程。
